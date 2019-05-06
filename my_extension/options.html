@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DeskFit Options</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="jquery-3.4.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		h1{
+			padding-bottom: 10px;
+		}
+		body{
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>DeskFit Options</h1>
+		<p>Choose your workout style</p>		
+		<select id="workoutStyle">
+			<option value="auto">auto</option>
+			<option value="manual">manual</option>
+		</select><br><br>
+		<p>How long would like to do each exercise?</p>		
+		<select id="workoutLength">
+			<option value="15">15s</option>
+			<option value="30">30s</option>
+			<option value="45">45s</option>
+			<option value="60">60s</option>
+		</select><br><br>
+		<button class="btn btn-primary btn-sm" id="saveOptions">Save</button>
+		<label id="saveStatus"></label>
+	</div>
+	<script src="options.js"></script>
+</body>
+</html>

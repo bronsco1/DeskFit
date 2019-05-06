@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet"
+ href="https://fonts.googleapis.com/css?family=Oswald">
+ <title>DeskFit</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+ <script src="jquery-3.4.0.min.js"></script>
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+ <style type="text/css">
+  p{
+    /*font-family: 'Oswald', serif;*/
+    text-shadow: none;
+    font-size:16px;
+    color: black;
+  }
+
+  .carousel-inner{
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-caption {
+    opacity: 0.6;
+    background-color: white;
+    padding: 12px;
+    text-align: center;
+  }
+  .container {
+    font-family: 'Oswald', serif;
+    text-align: center;
+    width: 45vw;
+    height: 45vw;
+    float: middle;
+  }
+
+  label{
+    font-size: 20px;
+    /*font-family: 'Tangerine', serif;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  h3{
+    /*font-family: 'Tangerine', serif;*/
+    text-shadow: none;
+    color: black;
+  }
+
+  #timer{
+    color: #7CFC00;
+    font-size: 30px;
+  }
+
+  button{
+    padding: 20px;
+  }
+
+
+</style>
+</head>
+<!-- <body> -->
+<body>
+  <div class="container">
+    <h2>Workout style</h2>
+    <label id="workoutStyle"></label><br>
+    <label id="timer"></label>
+    <div id="myCarousel" class="carousel slide" data-wrap="false">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="img/shoulder-shrugs.jpg" alt="Shoulder Shrugs" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Shoulder Shrugs</h3>
+            <p>Gently lift your shoulders. Let them slowly fall. You should feel tension being released as your shoulders drop.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/seated-spinal-rotation.jpg" alt="Seated Spinal Rotation" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Seated Spinal Rotation</h3>
+            <p>While seated, cross your arms over your chest. Grab your shoulders. Rotate your upper body from the waist, turning gently from left to right as far as you can. You should feel a tension on both side of your lower back as it stretches out.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/posterior-shoulder-stretch.jpg" alt="Posterior Shoulder Stretch" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Posterior Shoulder Stretch</h3>
+            <p>Hold one arm across your body. Pull your elbow into your chest. You should feel your shoulder gently stretching.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/sitting-back-extensions.jpg" alt="Sitting Back Extensions" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Sitting Back Extensions</h3>
+            <p>Sit straight with your feet together. Put the palms of your hands into the small of your back. Lean back over your hands, feeling your lower back stretch out.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/neck-rotations.jpg" alt="Neck Rotations" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Neck Rotations</h3>
+            <p>Keep your head upright. Gently turn your head from side to side. As you turn your head, try to move it past your shoulder. You should feel the muscles on the outside of your neck gradually stretching.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/upper-trapezius-stretch.jpg" alt="Upper Trapezius Stretch" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Upper Trapezius Stretch</h3>
+            <p>Sit on one hand. Tilt your head away from the hand you're sitting on. Tilt your head slightly forward, towards your shoulder. You should feel the muscles in your neck and shoulder being stretched. Change sides, and repeat.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/shoulder-extension-1.jpg" alt="Shoulder Extension 1" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Shoulder Extension 1</h3>
+            <p>Stand up and stretch your arms out behind you. Clasp your hands together and gently lift your arms. You should feel the pressure in your shoulders ease off.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/shoulder-extension-2.jpg" alt="Shoulder Extension 2" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Shoulder Extension 2</h3>
+            <p>Hold both arms above your head. Link your hands with your palms facing upwards. Reach as high as possible. You should feel your shoulders stretching.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/seated-arm-leg-raises.gif" alt="Seated Arm & Leg Raises" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Seated Arm & Leg Raises</h3>
+            <p>Sit carefully on a chair or exercise ball with your hips and neck in a neutral position. Lift one arm and the opposite leg at the same time, keeping them both straight, without allowing the ball to move. Alternate with the opposite arm and leg. Repeat.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/seated-leg-press.gif" alt="Seated Leg Press" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Seated Leg Press</h3>
+            <p>Place your feet in the center loops of the CLX band, holding the end loops in each hand with a closed grip. If there is not enough tension, move your hands one loop closer to the center of the band. Sit carefully on an exercise ball or chair. Hold your hands at chest level, and extend one leg in front of you. Pull your knee upward to your chest. Hold and slowly return to the starting position. Repeat on opposite leg. TIP: Keep your back straight.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/seated-elbow-bend.gif" alt="Seated Elbow Bend" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Seated Elbow Bend</h3>
+            <p>Place your feet in the center loops of the CLX band, holding the end loops in each hand with a closed grip. Make sure your palms are facing each other. If there is not enough tension, move your hands one loop closer to the center of the band. Sit carefully on an exercise ball or chair, keeping your back straight. Keeping your elbows at your sides and wrists straight, bend your elbows, bringing your hands to your shoulders. Slowly return to the starting position. Repeat.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/seated-shoulder-press.gif" alt="Seated Shoulder Press" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Seated Shoulder Press</h3>
+            <p>Start in a two-handed position, holding one loop of the CLX band in each hand, each hand separated by two loops. Place the CLX around your back at chest height, with elbows bent and palms facing each other. Sit carefully on an exercise ball or chair. Extend your hands straight out from your chest, as if you were pushing an object away from you, at shoulder height. Slowly return to the starting position. Repeat. TIP: Keep your back and neck straight. Don't shrug your shoulders. Don't hold your breath.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/seated-row.gif" alt="Seated Row" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Seated Row</h3>
+            <p>Place your feet in the center loops of the CLX band, grabbing the loops of the CLX with a closed grip. Sit carefully on an exercise ball or chair. Extend your legs and arms, keeping your knees and elbows straight. If you don’t have enough tension, move your hands closer to the center of the band. Pull the band back, bending your elbows. Squeeze your shoulder blades together at the top of the pulling motion. Slowly return to the starting position. Repeat. TIP: Keep your knees and back straight.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/seated-upright-row.gif" alt="Seated Upright Row" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Seated Upright Row</h3>
+            <p>Place your feet in the center loops of the CLX band, grabbing the loops of the CLX with a closed grip, palms facing down. Sit carefully on an exercise ball or chair. Lift your hands straight up toward your chin, with your elbows pointing out. Hold and slowly return to the starting position. Repeat.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a id="leftNav" class="left carousel-control" href="#myCarousel" data-slide="prev" style="background:none !important">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a id="rightNav" class="right carousel-control" href="#myCarousel" data-slide="next" style="background:none !important">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><br>
+    <button class="btn btn-primary btn-lg" id='replay'>Replay</button>
+  </div>
+  <script src="background.js"></script>
+</body>
+</html>

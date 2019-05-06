@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DeskFit</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="jquery-3.4.0.min.js"></script>
+	<style type="text/css">
+
+		body {
+			text-align: center;
+			width: 200px;
+			height: 350px;
+		}
+
+/*		button {
+			margin: 5px;
+			outline: none;
+		}
+
+		button:hover {
+			outline: #80DEEA dotted thick;
+		}
+		*/
+		#icon {
+			width: 100px;
+			margin: 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<img src='icon/icon128.png' id='icon'>
+	<h1>DeskFit</h1>
+	<!-- <h2 id="notify">Notification Interval: <span id="notif">0</span> minutes</h2> -->
+	<!-- <button class="btn btn-primary btn-sm" type="button" id='sampleSec' value='0.1'>1 Second</button> -->
+	<!-- <button type="button" id='sampleMin' value='1'>1 Minute</button> -->
+	<button class="btn btn-primary btn-sm" id='30min' value='30'>30 Minutes</button>
+	<button class="btn btn-primary btn-sm" id='60min' value='60'>60 Minutes</button>
+	<button class="btn btn-primary btn-sm" id='90min' value='90'>90 Minutes</button>
+	<button class="btn btn-primary btn-sm" id='cancelAlarm'>Cancel</button>
+	<button class="btn btn-primary btn-sm" id='startWorkout'>Start Workout</button>
+	<!-- <a href="background.html" class="button">Start Workout</a> -->
+	<!-- <input type="button" id="startWorkout" value="Start Workout"> -->
+	<!-- <a href="url" class="button">text</a> -->
+	<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "DeskFit",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Reminds you to take exercise breaks while working",
+  "icons": {                   
+    "16": "icon/icon16.png",
+    "32": "icon/icon32.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"  
+  }, 
+  "default_locale": "en",
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+   "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  // "options_page": "options.html",
+  "browser_action": {
+    "default_icon": {
+     "16": "icon/icon16.png",
+     "32": "icon/icon32.png",
+     "48": "icon/icon48.png",
+     "128": "icon/icon128.png"   
+   },
+   "default_title": "DeskFit",
+   "default_popup": "popup.html"
+ },
+ "permissions": [
+  "notifications", 
+  "storage", 
+  "alarms"
+],
+  "web_accessible_resources": [
+    "icon/icon48.png"
+  ]
+}
